@@ -43,8 +43,9 @@ public class Program {
                         person.getLastName().equalsIgnoreCase(searchName))
                         .toList();
 
-        System.out.println("People with matching name:");
+        System.out.print("People with matching name: ");
         matchingPeople.forEach(person -> System.out.println(person.getFirstName() + " " + person.getLastName()));
+        System.out.println();
 
 
         //int averageAge = calculateAverageAge(people);
